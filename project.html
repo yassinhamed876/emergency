@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Emergency Services</h1>
+    <p>Select your emergency situation</p>
+</header>
+
+<div class="container">
+
+    
+    <div class="select-container">
+        <select id="ui" onchange="showcontent()">
+            <option value="" disabled selected>Select an emergency condition</option>
+            <option value="1">Burn</option>
+            <option value="2">Bleeding</option>
+            <option value="3">Fracture</option>
+            <option value="4">Heart attack</option>
+            <option value="5">Sprain/Strain</option>
+        </select>
+    </div>
+    <div id="content" class="content-box">
+        Select an emergency condition to see the first aid steps.
+    </div>
+    
+
+
+    <div class="emergency-grid">
+
+        <div class="emergency-card ambulance">
+            <div class="icon-box">🚑</div>
+            <h2>Ambulance</h2>
+            <div class="phone-number">123</div>
+            <a href="tel:123" class="call-btn">Call Now</a>
+        </div>
+
+        <div class="emergency-card police">
+            <div class="icon-box">🚓</div>
+            <h2>Police</h2>
+            <div class="phone-number">122</div>
+            <a href="tel:122" class="call-btn">Call Now</a>
+        </div>
+
+        <div class="emergency-card fire">
+            <div class="icon-box">🔥</div>
+            <h2>Fire</h2>
+            <div class="phone-number">180</div>
+            <a href="tel:180" class="call-btn">Call Now</a>
+        </div>
+
+        <div class="emergency-card gas">
+            <div class="icon-box">⛽</div>
+            <h2>Gas</h2>
+            <div class="phone-number">129</div>
+            <a href="tel:129" class="call-btn">Call Now</a>
+        </div>
+        <div class="emergency-card poison">
+            <div class="icon-box">☠️</div>
+            <h2>Poison</h2>
+            <div class="phone-number">199</div>
+            <a href="tel:199" class="call-btn">Call Now</a>
+        </div>
+<div class="emergency-card water">
+            <div class="icon-box">💧</div>
+            <h2>Water</h2>
+            <div class="phone-number">125</div>
+            <a href="tel:125" class="call-btn">Call Now</a>
+        </div>
+
+    </div>
+
+</div>
+<script src="//code.tidio.co/ypykpwsswh5awfwfwgzqirkftb1px7lh.js" async></script>
+<script src="project.js"></script>
+
+</body>
+</html>
